@@ -1,0 +1,76 @@
+.all{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.choose{
+    width: 20%;
+    box-shadow: 2px 2px 2px grey;   
+    height: 100vh;
+}
+.choosediv{
+    width: 88%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5vh;
+    margin: 0;
+}
+.choosediv2{
+    width: 88%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5vh;
+    color: rgb(68, 68, 68);
+    background-color: rgb(199, 199, 199);
+}
+.choosediv1{
+    width: 88%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5vh;
+    padding-top: 3vh;
+    color: rgb(68, 68, 68);
+}
+.choosediv:hover{
+    background-color: rgb(199, 199, 199);
+}
+.inchoosediv1{
+    font-size: 30px;
+    font-family: sans-serif;    
+}
+.inchoosediv{
+    font-size: 17px;
+    font-family: sans-serif;
+    width: 100%;    
+}  
+.inchoosediv2{
+    font-size: 17px;
+    font-family: sans-serif;
+    width: 100%;
+}  
+.decor{
+    text-decoration: none;
+    color: black;
+    /* font-size: 15px; */
+}
+.pchange{
+    font-size: 33px;
+    padding-left: 8vh;
+    padding-top: 4vh;
+    font-family: sans-serif;
+    margin: 0;
+}
+.upchange{
+    width: 160vh;
+    display: flex;
+    justify-content: space-between;
+}
+.downchange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}

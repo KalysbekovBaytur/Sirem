@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog</title>
+    <link rel="stylesheet" href="/katalog.css">
+</head>
+<body>
+    <div class="all">
+        <div class="choose">
+            <div class="choosediv1">
+                <p class="inchoosediv1">Newborn</p>
+            </div>
+            <a href="/api/obzor" class="decor">
+                <div class="choosediv">
+                    <p class="inchoosediv">Обзор</p>
+                </div>
+            </a>
+            <a href="/api/analytics" class="decor">
+                <div class="choosediv">
+                    <p class="inchoosediv">Аналитика</p>
+                </div>
+            </a>
+            <a href="/api/history" class="decor">
+                <div class="choosediv">
+                    <p class="inchoosediv">История</p>
+                </div>
+            </a>
+            <a href="/api/add" class="decor">
+                <div class="choosediv">
+                <p class="inchoosediv">Добавить Заказ</p>
+            </div>
+            </a>
+            <a href="/api/category" class="decor">
+                <div class="choosediv2">
+                    <p class="inchoosediv2" >Ассортимент</p>
+                </div>
+            </a>
+        </div>
+        <div class="katalog">
+            <div class="kategori1">
+                    <p class="pkatalog">Категории</p>
+                    <div class="adddiv">
+                        <button class="add" id="add">ДОБАВИТЬ КАТЕГОРИЮ</button>
+                    </div>
+            </div>
+            <div class="kategori2">
+                <div class="taibur">
+                    {{#each category}}
+                <div class="food">
+                        <div class="infood">
+                            <a href="/api/podcategory/{{this._id}}" class="afood1">{{this.name}} <div class="delupdt">
+                                </a> <div class="changer"><a href="category/update/{{this._id}}" class="adivkey"><div class="divkey"><img src="https://svgsilh.com/png-1024/307104.png" alt="" class="key"></div> <a href="/api/category/delete/{{this._id}}"><div class="divmusorka"><img src="https://cdn-icons-png.flaticon.com/512/1483/1483063.png" alt="" class="musorka"></div></a></a></div>
+                            </div>
+                        </div>
+                    </div>
+                      {{/each}}
+                    
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="topcreate">
+       <form action="/api/category/addCategory" method="post" class="create">
+        <div class="increate1">
+            <p class="pincreate1">Задайте название категории</p>
+        </div>
+        <div class="increate2">
+            <input type="text" placeholder="Название категории" class="inputincreate2" name="kategory">
+        </div>
+        <div class="send">
+            <input type="submit" class="submit"> 
+        </div>
+       </form>
+    </div>
+    <div class="crest">
+        <div class="crest1"></div>
+        <div class="crest2"></div>
+    </div>
+    <script src="/default.js"></script>
+</body>
+</html>

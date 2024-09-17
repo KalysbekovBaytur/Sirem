@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>почему</title>
+    <link rel="stylesheet" href="/register.css">
+</head>
+<body>
+    <div class="polosa">
+        <div class="nborn"><p class="pnborn">Newborn</p></div>
+        <div class="borni">
+            <a href="" class="nborn2"><p class="pnborn2">Вход</p></a>
+            <a href="/auth/registration" class="nborn3"><p class="pnborn3">Регистрация</p></a>
+        </div>
+    </div>
+    <div class="forreg">
+        <div class="reg">
+            <div class="first">
+                <div class="vxod">
+                    <p class="vxod1">Войти в систему</p>
+                    <p>{{message}}</p>
+                </div>
+                
+            </div>
+            <div class="second">
+                <form action="/auth/vxodUser" method="post">
+                <div class="mail">
+                    <input type="text" name="email" placeholder="E-mail" class="inmail">
+                </div>
+                <div class="password">
+                    <input type="password" name="password" placeholder="Пароль" class="password2">
+                </div>
+                <div class="submit">
+                    <button class="submitreg">Войти</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

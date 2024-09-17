@@ -1,0 +1,27 @@
+<!-- npm install
+    install express
+    install mongose
+    install hbs -->
+<body>
+    <div class="all">
+        
+        <form action="/ " method="post">
+            <div class="head"> <p>О себе</p></div>
+        <div class="first">
+            Ваш имя: <input type="text" name="name">
+         </div>
+         
+         <div class="send">
+             <input type="submit">
+         </div>
+         </form>
+         <div class="user">
+             <ul>
+              {{#each nameVisible}}
+                <li>{{this.name}} <a href="del/{{this._id}}">удалить</a> <a href="/update/{{this._id}}">изменить</a></li>{{/each}}
+             </ul>
+         </div>
+     </div>
+     <div class="all2">
+    <script src="app.js"></script>
+</body>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/podcategory.css">
+</head>
+<body>
+
+
+    <div class="all">
+        <div class="choose">
+            <div class="choosediv1">
+                <p class="inchoosediv1">Newborn</p>
+            </div>
+            <a href="/api/obzor" class="decor">
+                <div class="choosediv">
+                    <p class="inchoosediv">Обзор</p>
+                </div>
+            </a>
+            <a href="/api/analytics" class="decor">
+                <div class="choosediv">
+                    <p class="inchoosediv">Аналитика</p>
+                </div>
+            </a>
+            <a href="/api/history" class="decor">
+                <div class="choosediv">
+                    <p class="inchoosediv">История</p>
+                </div>
+            </a>
+            <a href="/api/add" class="decor">
+                <div class="choosediv">
+                <p class="inchoosediv">Добавить Заказ</p>
+            </div>
+            </a>
+            <a href="/api/category" class="decor">
+                <div class="choosediv2">
+                    <p class="inchoosediv2">Ассортимент</p>
+                </div>
+            </a>
+        </div>
+        {{!-- <div>
+            <p>{{categoryId}}</p>
+            <p>{{categoryName}}</p>
+        </div> --}}
+        <div class="position">
+            <div class="podcategory1">
+                    <p class="pupposition">Категории > Позиции категории</p>
+                    <div class="addposition">
+                        <button class="pod_add" id="add">ДОБАВИТЬ ПОЗИЦИЮ</button>
+                    </div>
+            </div>
+            <div class="kategori2">
+                <div class="taibur">
+                    {{#each category}}
+                <div class="food">
+                        <div class="infood">
+                            <a href="" class="afood1">{{this.name}} {{this.cost}}руб.<div class="delupdt"></a>
+                            <a href="/api/podcategory/delete/{{this._id}}"><div class="divmusorka"><img src="https://cdn-icons-png.flaticon.com/512/1483/1483063.png" alt="" class="musorka"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                      {{/each}} 
+                </div>
+        </div>
+        
+    <div class="topcreate">
+        <form action="/api/podcategory/addpostpodCategory" method="post" class="create">
+            <div class="increate1">
+             <p class="pincreate1">Задайте название категории</p>
+            </div>
+            <div class="increate2">
+                <input type="text" placeholder="Idc" class="inputincreate2" name="Idc" value="{{idCategory}}">
+
+                <input type="text" placeholder="Название позиции" class="inputincreate2" name="position">
+                <div class="podctgcost">
+                    <input type="text" placeholder="Цена позиции" class="inputincreate2indiv" name="cost">
+                    <p class="rub">руб.</p>
+                </div>
+            </div>
+            <div class="send">
+                <input type="submit">
+            </div>
+       </form>
+    </div>
+    <div class="crest">
+        <div class="crest1"></div>
+        <div class="crest2"></div>
+    </div>
+    <script src="/podcategory.js"></script>
+</body>
+</html>
+
+{{!-- /api/podcategory/{{this._id}} --}}

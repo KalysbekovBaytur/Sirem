@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/podctgadd.css">
+</head>
+<body>
+
+
+    <div class="all">
+        <div class="choose">
+            <div class="choosediv1">
+                <p class="inchoosediv1">Newborn</p>
+            </div>
+            <a href="/api/obzor" class="decor">
+                <div class="choosediv">
+                    <p class="inchoosediv">Обзор</p>
+                </div>
+            </a>
+            <a href="/api/analytics" class="decor">
+                <div class="choosediv">
+                    <p class="inchoosediv">Аналитика</p>
+                </div>
+            </a>
+            <a href="/api/history" class="decor">
+                <div class="choosediv">
+                    <p class="inchoosediv">История</p>
+                </div>
+            </a>
+            <a href="/api/add" class="decor">
+                <div class="choosediv2">
+                <p class="inchoosediv">Добавить Заказ</p>
+            </div>
+            </a>
+            <a href="/api/category" class="decor">
+                <div class="choosediv">
+                    <p class="inchoosediv2">Ассортимент</p>
+                </div>
+            </a>
+        </div>
+        {{!-- <div>
+            <p>{{categoryId}}</p>
+            <p>{{categoryName}}</p>
+        </div> --}}
+        <div class="position">
+            <div class="kategori1">
+                    <div class="podcategory1">
+                        <p class="pupposition">Добавление заказа > Блюда</p>
+                    </div>
+                    <div class="adddiv">
+                        <button class="add" id="add">Оформить заказ</button>
+                    </div>
+            </div>
+        <div class="kategori2">
+            <div class="taibur">
+                    {{#each category}}
+                <div class="food">
+                        <div class="infood">
+                            <a href="" class="afood1">{{this.name}}<div class="delupdt"></a>     
+                            <a href="" class="costfood"> {{this.cost}}<div class="delupdt"></a>  
+                            <span>руб.</span>
+                            <input type="number" min="0" class="inputnumber{{@index}}" data-numberinput="{{@index}}">
+                            <div class="addoffer" data-name="{{this.name}}" data-cost="{{this.cost}}" data-number="{{@index}}" ><div class="divaddfood" ><img src="https://cdn-icons-png.flaticon.com/512/7794/7794550.png" alt="" class="addfood"></div></div>
+                        </div>
+                </div>
+            </div>
+                    {{/each}} 
+        </div>
+        </div>
+
+<div class="topcreate">
+       {{!-- <form action="/api/category/addCategory" method="post" class="create"> --}}
+    <div class="create">
+        <div class="increate1">
+            <p class="pincreate1">Ваш заказ</p>
+        </div>
+        <div class="offerfood">
+
+        </div>
+        <form action="">
+            <label for="">Cost</label>
+            <input type="text" name="" id="allcost" value="">
+            <button class="btnallcost">завершить заказ</button>
+        </form>
+    </div>
+        
+</div>
+</div>      
+    <div class="crest">  
+        <div class="crest1"></div>
+        <div class="crest2"></div>
+    </div>
+    </div>
+    <script>
+       
+    </script>
+    <script src="/podctgadd.js"></script>
+</body>
+</html>
+
+{{!-- /api/podcategory/{{this._id}} --}}

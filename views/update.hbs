@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/update.css">
+</head>
+<body>
+
+    <div class="all">
+        <div class="choose">
+            <div class="choosediv1">
+                <p class="inchoosediv1">Newborn</p>
+            </div>
+            <a href="/api/obzor" class="decor">
+                <div class="choosediv">
+                    <p class="inchoosediv">Обзор</p>
+                </div>
+            </a>
+            <a href="/api/analytics" class="decor">
+                <div class="choosediv">
+                    <p class="inchoosediv">Аналитика</p>
+                </div>
+            </a>
+            <a href="/api/history" class="decor">
+                <div class="choosediv">
+                    <p class="inchoosediv">История</p>
+                </div>
+            </a>
+            <a href="/api/add" class="decor">
+                <div class="choosediv">
+                <p class="inchoosediv">Добавить Заказ</p>
+            </div>
+            </a>
+            <a href="/api/category" class="decor">
+                <div class="choosediv2">
+                    <p class="inchoosediv2">Ассортимент</p>
+                </div>
+            </a>
+        </div>
+        <div class="allbox">
+            <div class="position">
+            <div class="podcategory1">
+                    <p class="pupposition">Категории > Редактировать категорию</p>
+            </div>
+        </div>
+    <div class="allinfo">
+        <form action="/api/category/update" method="post"> 
+            <div class="info">
+                <div class="inv">
+                    <input type="text" name="userID" value="{{updateId}}" id="">
+                    <input type="text" value="{{categoryId}}" name="Id">
+                </div>
+            <p class="ktgname2">Ваше текущее название категории:</p><input type="text" name="curent_category" disabled="disabled" value="{{categoryName}}" id="">
+            <p class="ktgname">Ваше новое название категории:</p><input type="text" name="new_nameCategory"> <br>
+            <button class="btnadd2"><div class="divadd2"><img src="https://cdn-icons-png.flaticon.com/512/21/21100.png" alt="" class="add2"></div></button>
+            </div>
+        </form>
+    </div>
+        </div>
+</body>
+</html>

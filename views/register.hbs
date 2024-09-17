@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>что</title>
+    <link rel="stylesheet" href="/register2.css">
+</head>
+<body>
+    <div class="polosa">
+        <div class="nborn"><p class="pnborn">Newborn</p></div>
+        <div class="borni">
+            <a href="/auth/login" class="nborn2"><p class="pnborn2">Вход</p></a>
+            <a href="" class="nborn3"><p class="pnborn3">Регистрация</p></a>
+        </div>
+    </div>
+    <div class="forreg">
+        <div class="reg">
+            <div class="first">
+                <div class="vxod">
+                    <p class="vxod1">Регистрация</p>
+                    <p>{{message}}</p>
+                </div>
+                <form action="/auth/registerUser" method="post">
+                     <div class="mail">
+                    <input type="text" name="email" placeholder=" Введите ваш E-mail" class="inmail">
+                </div>
+            </div>
+            <div class="second">
+                <div class="password">
+                    <input type="password" name="password" placeholder="Придумайте пароль" class="password2">
+                </div>
+                <div class="submit">
+                    <button class="submitreg">Зарегистрироваться</button>
+                </div>
+                </form>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
