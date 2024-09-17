@@ -18,7 +18,7 @@ app.use(express.json());
 
 // calyzbecovbaytur1110
 // Dol84fv8Qell4Rfd
-mongoose.connect("mongodb+srv://calyzbecovbaytur1110:Dol84fv8Qell4Rfd@sirem.eo1hg.mongodb.net/").then(()=>{
+mongoose.connect("mongodb+srv://calyzbecovbaytur1110:Dol84fv8Qell4Rfd@sirem.eo1hg.mongodb.net/?retryWrites=true&w=majority&appName=Sirem").then(()=>{
     console.log("bdconnect")
 }).catch(err=>{
     console.log("bderr", err)
